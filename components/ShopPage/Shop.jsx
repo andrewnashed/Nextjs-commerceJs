@@ -13,7 +13,7 @@ const Shop = ({categories, products}) => {
             
             <div className={styles.sidebar} >
              {categories.map(category => {return(<React.Fragment>
-                <h2>{category.name}</h2>
+                <h2 key={category.id}>{category.name}</h2>
                 <p>{category.products}</p>
                 </React.Fragment>)}
              )}
@@ -21,11 +21,11 @@ const Shop = ({categories, products}) => {
                 <div className={styles.content}>
                 <div style={{width: '100%'}}>
              {categories.map(category => 
-                    <div className={styles.category}>
+                    <div key={category.id} className={styles.category}>
                      <h2>{category.name}</h2>
                                 <div className={styles.products}>
                     {products.filter(product => product.categories[0].name === category.name).map(product => {
-                       return( <Product product={product}/>)
+                       return( <Product key={product.id} product={product}/>)
                     })}
                 </div>
               </div>
@@ -33,18 +33,6 @@ const Shop = ({categories, products}) => {
                </div>
                  </div>
                  </div>
-               {/* </div> :  <div style={{width: '100%'}}>
-             {categories.map(category => 
-                    <div style={{width: '100%'}}>
-                     <h2>{category.name}</h2>
-                                <div >
-                    {products.filter(product => product.categories[0].name === category.name).map(product => {
-                       return( <Product product={product}/>)
-                    })}
-                </div>
-              </div>
-             )}
-               </div>} */}
       <div>
           {products.filter}
       </div>
