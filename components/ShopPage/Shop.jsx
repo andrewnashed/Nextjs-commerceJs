@@ -12,10 +12,10 @@ const Shop = ({categories, products}) => {
         <div className={styles.shopsecWithSidebar} >
             
             <div className={styles.sidebar} >
-             {categories.map(category => {return(<React.Fragment>
-                <h2 key={category.id}>{category.name}</h2>
+             {categories.map(category => {return(<div key={category.id}>
+                <h2 >{category.name}</h2>
                 <p>{category.products}</p>
-                </React.Fragment>)}
+                </div>)}
              )}
              </div>
                 <div className={styles.content}>
