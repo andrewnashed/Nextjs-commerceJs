@@ -1,0 +1,176 @@
+.container{
+    position: static;
+    background-color: rgba(0, 0, 0,.3);
+}
+.cart {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .3s ease ;
+    font-size: 2rem;
+    z-index: 1;
+    border-left:1px solid black ;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:0 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.title button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color:transparent;
+    font-size: 2rem;
+}
+.cartItems {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.cartItems ul {
+   align-self: flex-start;
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  overflow: scroll;
+  height: 35vh;
+}
+
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+   
+    width: 100%;
+    margin: 1.5rem;
+    padding: 0;
+    
+}
+
+.cartItem  img{
+   z-index: 1;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.quantity button{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+}
+.CartItemDetails{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 60%;
+}
+.price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.price p {
+    font-size: 2rem;
+}
+.cartButtons {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+}
+
+.cartButtons button {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+}
+.footer {
+    background-color: var(--color-secondary);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 30vh;
+    padding: 3rem 0;
+    text-align: left;
+    margin-top: 9rem;
+} 
+
+.footButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+.footer p{
+    padding: 0;
+    
+}
+.buttonOutline {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding:1rem;
+    margin: 0;
+    font-size: 2rem;
+    width: 40%;
+}
+.buttonFill {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding:2rem;
+    margin: 0;
+    font-size: 2rem;
+    width: 40%;
+}
+@media screen and (min-width: 800px) {
+    .cart {
+        width:70%;
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cart {
+        width:40%;
+       
+    }
+    .cartItem {
+        display: flex;
+        justify-content: space-evenly;
+       align-items: center;
+        width: 100%;
+        margin: 1.5rem 0;
+        padding: 0;
+        border-bottom: 1px solid black;
+        
+    }
+    
+}

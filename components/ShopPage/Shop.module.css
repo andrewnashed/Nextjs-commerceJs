@@ -1,0 +1,112 @@
+.container {
+    width: 100%;
+}
+.container h1 {
+   text-align: center;
+    font-size: 5rem;
+}
+.sidebar {
+    position: absolute;
+    visibility: hidden;
+}
+.category{
+    display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      
+
+}
+.category h2{
+    width: 100%;
+    font-size: 2rem;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 15px;
+    object-fit: cover;
+    width: 90%;
+    place-items: center;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 0 3rem;
+}
+.products button {
+    font-size: 2.7rem;
+    padding: 0rem ;
+}
+@media screen and (min-width: 800px) {
+    .shopsecWithSidebar {
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     
+    }
+    .sidebar{
+      left: 0;
+        /* height: fit-content; */
+        text-align: left;
+        padding: 1rem 0 0 2rem ;
+        font-size: 1.3rem;
+        visibility: visible;
+        position: static;
+    }
+    .sidebar h2 {
+        width: 100%;
+        
+    }
+    .content {
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        /* padding:0 0 0 3rem;
+        margin:0 4rem; */
+        width: 70%;
+        overflow-y: auto;
+        text-align:justify;
+        height: 60rem;
+    }
+    .category {
+        width: 100%;
+      
+        /* margin-left:6rem ; */
+    }
+    .category h2{
+    /* margin: 1rem 2.5rem; */
+    text-align: left;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        object-fit: cover;
+        /* display: flex;
+        justify-content: space-between; */
+        width: 100%;
+    }
+    .products button {
+        font-size: 2.5rem;
+        padding: 2rem ;
+    }
+
+}
+
+@media screen and (min-width: 1020px) {
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        object-fit: cover;
+        /* display: flex;
+        justify-content: space-between; */
+        width: 100%;
+    }
+    .sidebar {
+        font-size: 2rem;
+    }
+}

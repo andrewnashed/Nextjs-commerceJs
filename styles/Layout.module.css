@@ -1,0 +1,86 @@
+.container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   text-align: center;
+}
+
+.footer {
+    background-color: #171717;
+    color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+    margin-top: 6rem;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.footer ul {
+list-style-type: none;
+font-size: 2.2rem;
+padding:0;
+margin:2rem 3rem ;
+}
+.footer p {
+    font-size: 1.36rem;
+    width: 100%;
+    font-weight: bold;
+    margin:2.8rem auto;
+    align-self: center;
+}
+
+.form {
+    margin:3rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.form label {
+    font-size: 1.8rem;
+}
+.form input {
+    margin: 1.5rem auto;
+    width: 100%;
+    padding: .8rem 0;
+    border: none;
+}
+.form button{
+text-decoration: none;
+background-color: white;
+border: none;
+padding: 1rem;
+width: 40%;
+font-size: 2rem;
+color: black;
+
+}
+.form button:hover {
+    background-color: transparent;
+    color : white;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.footer a:hover{
+    color: #DA0037;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    margin: 6rem 0;
+}
+
+@media screen and (min-width: 800px) {
+    .footer form {
+        width: 30%
+    }
+}
